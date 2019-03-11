@@ -21,4 +21,5 @@ from app import views
 
 urlpatterns = [
     path('', views.index, name="index"),
+    path('users/', views.users, name="users"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
